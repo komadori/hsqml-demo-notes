@@ -18,6 +18,7 @@ Window {
             id: noteView; color: 'yellow';
             width: 100; height: header.height + frontView.contentHeight;
             x: modelData.x; y: modelData.y;
+            onXChanged: modelData.x = x; onYChanged: modelData.y = y;
 
             MouseArea {
                 id: header; height: 20; 
@@ -58,17 +59,6 @@ Window {
 
                 text: modelData.front;
                 onTextChanged: modelData.front = frontView.text;
-            }
-
-            Binding {
-                target: modelData;
-                property: 'x';
-                value: noteView.x;
-            }
-            Binding {
-                target: modelData;
-                property: 'y';
-                value: noteView.y;
             }
         }
     }

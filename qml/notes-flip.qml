@@ -83,6 +83,7 @@ Window {
         Flipable {
             id: flipper;
             x: modelData.x; y: modelData.y;
+            onXChanged: modelData.x = x; onYChanged: modelData.y = y;
 
             front: Loader {
                 sourceComponent: noteFace;
@@ -109,17 +110,6 @@ Window {
                         duration: 250;
                     }
                 }
-            }
-
-            Binding {
-                target: modelData;
-                property: 'x';
-                value: flipper.x;
-            }
-            Binding {
-                target: modelData;
-                property: 'y';
-                value: flipper.y;
             }
         }
     }
