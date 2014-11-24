@@ -52,7 +52,7 @@ Window {
                     anchors.rightMargin: 5;
                     anchors.verticalCenter: parent.verticalCenter;
                     font.pixelSize: parent.height;
-                    text: "\u2716";
+                    text: '\u2716';
                     color: closeArea.containsMouse ? 'red' : 'black';
 
                     MouseArea {
