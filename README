@@ -1,0 +1,15 @@
+hsqml-demo-notes
+================
+
+This sticky notes program using HsQML was introduced in my November 2014 talk
+to the London Haskell User Group. The 'hsqml-notes' executable can be passed
+an argument to specify which QML front-end to use:
+
+notes      - Stardard UI (default)
+notes-pro  - Alternative UI using Qt Quick Controls
+notes-flip - Standard UI with flipable double-sided notes
+notes-dual - Standard and alternate UI displayed simultaneously
+
+Home Page:        http://www.gekkou.co.uk/software/hsqml/
+Darcs Repository: http://hub.darcs.net/komadori/hsqml-demo-notes/
+Issue Tracker:    http://trac.gekkou.co.uk/hsqml/

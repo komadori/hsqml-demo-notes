@@ -13,6 +13,8 @@ Category:      Graphics
 Synopsis:      Sticky notes example program implemented in HsQML
 Data-dir:      qml
 Data-files:    *.qml *.png
+Extra-source-files:
+    README
 Description:
     Sticky notes example program implemented in HsQML
 
