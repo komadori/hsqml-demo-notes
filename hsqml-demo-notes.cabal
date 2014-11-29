@@ -12,7 +12,7 @@ Homepage:      http://www.gekkou.co.uk/software/hsqml/
 Category:      Graphics
 Synopsis:      Sticky notes example program implemented in HsQML
 Data-dir:      qml
-Data-files:    *.qml
+Data-files:    *.qml *.png
 Description:
     Sticky notes example program implemented in HsQML
 

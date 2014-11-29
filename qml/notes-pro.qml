@@ -26,11 +26,11 @@ ApplicationWindow {
     toolBar: ToolBar {
         RowLayout {
             ToolButton {
-                text: '\u2795';
+                iconSource: 'plus.png';
                 onClicked: insertNote(0, 0, 'New Note');
             }
             ToolButton {
-                text: '\u2796';
+                iconSource: 'minus.png';
                 onClicked: deleteNote(view.note);
                 enabled: view.hasNote;
             }
