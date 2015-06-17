@@ -1,0 +1,10 @@
+HsQML Samples - Release History
+
+release-0.3.3.0 - 2015.06.17
+
+  * Added faster multi-threaded version of the demo.
+  * Renamed original version hsqml-notes-slow.
+
+release-0.3.2.0 - 2014.11.29
+
+  * Initial release.
