@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Controls 1.1
 import QtQuick.Layouts 1.1
+import HsQML.Model 1.0
 
 ApplicationWindow {
     id: view;
@@ -46,10 +47,12 @@ ApplicationWindow {
         ScrollView {
             ListView {
                 id: notesView;
-                model: notes;
                 focus: true;
                 highlightMoveDuration: 0;
                 highlightResizeDuration: 0;
+                model: AutoListModel {
+                    source: notes; mode: AutoListModel.ByKey;
+                }
                 delegate: Text {
                     width: parent.width;
                     maximumLineCount: 1;

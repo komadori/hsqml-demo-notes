@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Window 2.0
+import HsQML.Model 1.0
 
 Window {
     width: 800; height: 600;
@@ -12,7 +13,7 @@ Window {
     }
 
     Repeater {
-        model: notes;
+        model: AutoListModel { source: notes; mode: AutoListModel.ByKey; }
 
         Rectangle {
             id: noteView; color: 'yellow';

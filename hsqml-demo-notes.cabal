@@ -28,7 +28,7 @@ Executable hsqml-notes
         text          >= 0.11 && < 1.3,
         transformers  >= 0.2 && < 0.5,
         sqlite-simple >= 0.4.8 && < 0.5,
-        hsqml         >= 0.3.2.1 && < 0.4
+        hsqml         >= 0.3.4 && < 0.4
     GHC-options: -threaded
 
 Executable hsqml-notes-slow
@@ -39,7 +39,7 @@ Executable hsqml-notes-slow
         base          == 4.*,
         text          >= 0.11 && < 1.3,
         sqlite-simple >= 0.4.8 && < 0.5,
-        hsqml         >= 0.3.2.1 && < 0.4
+        hsqml         >= 0.3.4 && < 0.4
     GHC-options: -threaded
 
 Source-repository head
