@@ -45,7 +45,7 @@ data DBCommand = Load | Pending | Quit
 type ModelVar = MVar (Map Note NoteData)
 type CmdVar = MVar DBCommand
 
-type Lens t p = (Functor f) => (p -> f p) -> t -> f t
+type Lens t p = forall f. (Functor f) => (p -> f p) -> t -> f t
 
 view :: Lens t p -> t -> p
 view ln = getConst . ln Const
